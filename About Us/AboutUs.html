@@ -1,0 +1,126 @@
+<!--Just base code so you only have to copy and paste the beginning structure each time-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport w3 link: https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Name to Page  -->
+    <link rel="stylesheet" href="./AboutUs.css">
+    <link rel="stylesheet" href="../fonts.css">
+    <!-- Change href to relevant css -->
+    <!-- Add Navicon somewhere -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../Favicon/site.webmanifest">
+  </head>
+<body>
+    <div style="padding:0;"class="row" id ="BannerBar">
+        <div id="logosection" class="col-3">
+          <a  href="../index.html"><img id="logo" src="../Caribbean_Curious.png" alt=""></a>
+        </div>
+        <div style="padding:0;" id="optionsection"class="col-9">
+          <div id="optionscontainer">
+            <div id="mobileMenu">
+              <button id ="buttonMobile"type="button" name="button" onclick="openClose()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+              </button>
+            </div>
+            <ul id = "options">
+              <li class ="option"><a href="../Suggestions/suggestions.php">SUGGESTIONS</a></li>
+              <li class ="option"><a href="AboutUs.html">ABOUT US</a></li>
+              <li class ="option"><a href="../IslandList/IslandList.html">ISLAND LIST</a></li>
+              <li id="OddOne"class ="option"><a href="../InteractiveMap/InteractiveMap.html">INTERACTIVE MAP</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+      <!-- Copy from Line 50 to line 65 to add more content options-->
+
+      <div class="row">
+        <div class="AboutUsPage">
+        <h1 style="text-align:center">About Caribbean Curious </h1>
+        <div id="aboutuscontainer">
+          <div class="col-7" >
+            <p id="WebBio"> Caribbean Curious is a tourism-focused
+              website that aims to educate its visitors about the food, culture,
+              and various points of interest present on every Caribbean island.
+              The goal of the designers is to appeal to tourists and locals alike
+              who may wish to explore a specific island, or the Caribbean in general,
+              but don’t really know where to start. Caribbean Curious is built with
+              accessibility in mind, allowing users to browse the site from a personal computer or mobile device. </p>
+          </div>
+          <div class="col-5">
+            <img src="Caribbean_Curious.png" alt="" width=100%;>
+          </div>
+        </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <h2 style="text-align:center">Meet the Team</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div class="card">
+            <img class ="picture" src="Mikkel3.jpg" alt="Goofy">
+            <div class="container">
+              <h2 class ="CenterText">Mikkel Boxill</h2>
+              <p class="title CenterText">Future Software Engineer</p>
+              <p>Mikkel is an enthusiastic Barbadian student who loves Mathematics and Computer Science.
+                He loves challenges and making a challegning tourism website such as Caribbean Curious was a lot of fun.
+                Mikkel loves sports and games with friends and will often be seen doing one of these things when not busy. </p>
+              <p>mikkel.boxill@gmail.com</p>
+            <button class="button" onclick="document.location='mailto:mikkel.boxill@gmail.com'">Contact</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class ="picture" src="Brian.jpg" alt="Leader">
+            <div class="container">
+              <h2 class ="CenterText">Brian Maycock</h2>
+              <p class="title CenterText">Future Network Security Specialist </p>
+              <p>Team Leader for the Trouble Quad, Brian's a pretty swell guy from The Bahamas. When he's not hard at work in his 9 - 5 job,
+                he passes the time reading or tinkering with computers. He also watching anime and playing games on the side as well.
+                He also does volunteer work with his Rotaract Club.
+               </p>
+              <p>brian.a.maycock@gmail.com</p>
+              <button class="button" onclick="document.location='mailto:brian.a.maycock@gmail.com'">Contact</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class ="picture" src="Noah.jpg" alt="Poofy Hair">
+            <div class="container">
+              <h2 class ="CenterText">Noah Laville</h2>
+
+              <p class="title CenterText"> Future Cyber Security Guard</p>
+              <p>Noah has an interest in all things internet related, especially documentation and protocols,
+                although he is less of a coder. He  does find Javascript to be more of challenge to him.
+              His favorite games are Minecraft and Super Smash Bros. </p>
+              <p>fraudfish@gmail.com</p>
+              <button class="button" onclick="document.location='mailto:noahlaville14@gmail.com'">Contact</button>
+            </div>
+          </div>
+
+            <div class="card">
+              <img class ="picture" src="Sovena.jpg" alt="Me">
+              <div class="container">
+                <h2 class ="CenterText">Sovena Ramsahai</h2>
+                <p class="title CenterText"> Future Financial Engineer or Computer Programmer</p>
+                <p>She has a very deep interest in anything programming related, living in the small qite island of Nevis,
+                she enjoys reading, gaming, listening music and sleeping. Her favorite hobby is Photography and can always be found with and camera at hand. </p>
+                <p>sovena15@gmail.com</p>
+                <button class="button" onclick="document.location='mailto:sovena15@gmail.com'">Contact</button>
+              </div>
+            </div>
+
+      </div>
+
+
+    <script src="AboutUs.js"></script>
+  </body>

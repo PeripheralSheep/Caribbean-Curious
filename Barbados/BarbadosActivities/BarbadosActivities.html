@@ -1,0 +1,300 @@
+<!--Just base code so you only have to copy and paste the beginning structure each time-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport w3 link: https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbados Activies</title>
+    <!-- Name to Page  -->
+    <link rel="stylesheet" href="BarbadosActivities.css">
+    <link rel="stylesheet" href="../../fonts.css">
+    <!-- Change href to relevant css -->
+    <!-- Add Navicon somewhere -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../Favicon/site.webmanifest">
+  </head>
+  <body>
+    <div style="padding:0;"class="row" id ="BannerBar">
+        <div id="logosection" class="col-3">
+          <a  href="../../index.html"><img id="logo" src="../../Caribbean_Curious.png" alt=""></a>
+        </div>
+        <div style="padding:0;" id="optionsection"class="col-9">
+          <div id="optionscontainer">
+            <div id="mobileMenu">
+              <button id ="buttonMobile"type="button" name="button" onclick="openClose()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+              </button>
+            </div>
+            <ul id = "options">
+              <li class ="option"><a href="../../Suggestions/suggestions.php">SUGGESTIONS</a></li>
+              <li class ="option"><a href="../../About Us/AboutUs.html">ABOUT US</a></li>
+              <li class ="option"><a href="../../IslandList/IslandList.html">ISLAND LIST</a></li>
+              <li id="OddOne"class ="option"><a href="../../InteractiveMap/InteractiveMap.html">INTERACTIVE MAP</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+      <div style="height:70px;padding:0;" class="row Country">
+        <!-- Direct styles for the "Barbados row" -->
+        <div class="col-12" id = "Heading">
+          <div id ="titleHeading">
+            <h1 id="title" >Barbados</h1>
+          </div>
+          <!-- Change the name to suit -->
+        </div>
+      </div>
+
+      <!-- This row is the navigation Bar -->
+      <div class="row"id="NavBar2">
+        <div class="col-12" id="NavBar">
+          <button id="OpenMenuMobile" onclick="MobileOptions()"type="button" name="button">Topics</button>
+          <ul id ="NavList">
+            <!-- Change the hrefs to what you need for ur certain page -->
+            <li class="NavOption"><a href="../BarbadosIslandOverview/BarbadosIslandOverview.html">Island Overview</a></li>
+            <li class="NavOption"><a href="../BarbadosFood/BarbadosFood.html">Food</a></li>
+            <!-- Move activeBar to the li you want to be white/selected
+              **TO CHANGE THE COLOR IN MOBILE MODE GO TO THE JAVASCRIPT-->
+            <li class="NavOption"><a href="../BarbadosAccomodation/BarbadosAccomodation.html">Accomodation</a></li>
+            <li class="NavOption" id="activeBar"><a href="../BarbadosActivities/BarbadosActivities.html">Activities</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copy from Line 50 to line 65 to add more content options-->
+      <div class="row">
+        <h1 id ="IntroHeading">What You Can Do in Barbados</h1>
+      </div>
+      <div style="display:flex;justify-content: center;"  class="row">
+        <div id="Introduction" class="col-8">
+          <div class="central text">
+            Barbados has a lot to offer for tourists when it comes to exploration.
+            It can range from visiting a local Cricket match to exploring the fauna
+            and flora of Barbados to even watching racing at Bushy Park. There's so much to
+            do in Barbados and we will cover some areas of interest you can do.
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <!-- Or copy this div.row if you want the picture to be on other side -->
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">Cricket</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div style =""class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">If you are a fan of cricket then look no further.
+              Apart from Kensington Oval, there are a bunch of cricket pitches in
+              Barbados. From March to November in a typical, COVID-19 free year,
+              cricket matches are played on these pitches usually on the weekends.
+             </p>
+              <p class="text">These matches can range from school cricket matches
+              to club division level. Clubs such as:
+            <a href="https://www.google.com/maps/place/Wanderers+Cricket+Field/@13.0805965,-59.5997304,17z/data=!3m1!4b1!4m5!3m4!1s0x8c43f65838dfbc59:0x9dc225ad79d510d8!8m2!3d13.0805913!4d-59.5975417"
+            target ="_blank">Counterpoint Wanderers</a>,
+            <a href="https://www.google.com/maps/place/Empire+Sports+Club/@13.1078001,-59.6128303,17z/data=!3m1!4b1!4m5!3m4!1s0x8c43f7209c9724cb:0x251660819644a411!8m2!3d13.1077949!4d-59.6106416"
+            target='_blank'>Empire Cricket Club</a> and
+          <a href="https://www.google.com/maps/place/Carlton+Club/@13.1234622,-59.6286247,17z/data=!3m1!4b1!4m5!3m4!1s0x8c43f7339440baf9:0x52fd5b81c2a56d52!8m2!3d13.123457!4d-59.626436"
+          target ="_blank">Carlton</a> compete in the top-level, the Elite Division, during this period.</p>
+            </div>
+          </div>
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage" src="cricket.jpg" alt="Barbados Cricket Festival">
+              <!-- change image to waht you want -->
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">Marine Tours</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage"  src="AtlantisSubmarineTour.jpg" alt="AtlantisSubmarineTour">
+          </div>
+          <div class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">From Kayak Shipwreck Tours to Catamaran Snorkeling Cruises
+              to Submarine Tours, Barbados has a lot of options just off its shores. </p>
+              <p class = "text">When on these tours, there is the chance to witness
+              the beauty of Barbadian Coral Reefs and the wildlife they are home to.</p>
+            <p class = "text">There's no one place to go to enjoy these tours
+              but <a href="https://www.tripadvisor.com/Attractions-g147262-Activities-c42-t234-Barbados.html"
+            target ="_blank"> trip advisor</a> offers a lot of information regarding
+            tours such as prices and length of excursions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">St. Lawrence Gap</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div style =""class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">St. Lawrence Gap is one of the most popular tourist locations
+                in Barbados. It is 1.3km long, one-way road located in the parish of Christ Church.
+              It is commonly referred to as 'The Gap'</p>
+              <p class="text">From the time you enter the gap there are restaurants, hotels
+              and shopping areas there at your fingertips. Be sure to also visit at night to
+            obtain the nightlife experience.</p>
+            <p class ="text">
+            <a href="https://www.totallybarbados.com/articles/towns-places-interest/st-lawrence-gap/#.YSRhnXvPyUk"
+            target='_blank'>Totally Barbados</a> does a wonderful job on giving more information
+          on St. Lawrence Gap so make sure to visit there. </p>
+            </div>
+          </div>
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage" src="StLawrenceGap.jpg" alt="Entrance to St. Lawrence Gap">
+              <!-- change image to waht you want -->
+          </div>
+        </div>
+      </div>
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">Harrison's Cave</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage"  src="HarrisonCave.jpg" alt="View of inside Harrison Cave">
+          </div>
+          <div class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">One of Barbados.org's 'Seven Wonders of Barbados',
+                Harrison's Cave is a must go. First known records of the Cave are from
+              1796 but it was re-discovered and mapped in 1970 by Danish Ole Sorenson
+            and Barbadian Anthony Mason.</p>
+              <p class = "text">The beautiful limestone cave is full of stalactites, stalagmites
+              and streams of clear running water which come from waterfalls to form beautiful,
+            clear pools.</p>
+            <p class = "text">Tours to Harrison Cave can be a Tram Ride (which is
+              the popular option), an eco-adventure tour, or a walk-in cave tour. Visit
+              their <a href="https://chukka.com/destinations/barbados/harrisons-cave/"
+            target ="_blank">official website</a> to learn more about these tours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">The Barbados Wildlife Reserve</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div style =""class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">Barbados may not have a zoo but it does have a wildlife reserve.
+              It is located in St. Peter and is opposite Farley Hill National Park.</p>
+              <p class="text">You have the opportunity to stroll leisurely through the
+              reserve and watch the animals in their natural environment. Animals such as
+            deer, peacocks, green monkeys, turtles and iguanas.</p>
+            <p class ="text">A trip to the reserve may be one of your lengthier rides while in Barbados
+              but it is worth it. Read more about it <a href="https://barbados.org/reserve.htm#.YSRoEnvPyUk"
+            target="_blank">here.</a> </p>
+            </div>
+          </div>
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage" src="WildLifeReserve.jpg" alt="Some animals at the wild life reserve">
+              <!-- change image to waht you want -->
+          </div>
+        </div>
+      </div>
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">Crop Over Festival</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage"  src="CropOver.jpg" alt="Revellers on Kadooment Day" style="max-height:400px;">
+          </div>
+          <div class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">This is the largest festival that one can experience in Barbados.
+                Having roots from celebrating the end of the harvest season during the plantation era,
+                It runs from June to the first Monday in August. <br>
+                Throughout this season, there are:
+              </p>
+                <ul>
+                  <li>Calypso Competitons and Concerts</li>
+                  <li>Soca Competitions and Concerts</li>
+                  <li>Costume Competitions</li>
+                  <li>Bridgetown Market</li>
+                  <li>Cultural Exhibitions</li>
+                  and finally
+                  <li><b style = "font-family:latobold;">Grand Kadooment Day</b> to mark off the end of the festival</li>
+                </ul>
+              <p class="text">Grand Kadooment Day is like Carnival in the other Caribbean countries. Revellers
+              parade in their costumes with bands along a pre-determined route. Learn more
+            about Crop Over festical on <a href="https://ncf.bb/crop-over/" target="_blank">the National Cultural Foundation's</a> Website.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">Oistins Fish Fry</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div style =""class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">Oistins is an active fishing town located on the southside of Barbados.
+              Every Friday night, there is a fish fry at <a href="https://www.google.com/maps?ll=13.063197,-59.542431&z=16&t=m&hl=en-US&gl=US&mapclient=embed&q=13%C2%B003%2747.5%22N+59%C2%B032%2732.8%22W+13.063197,+-59.542431@13.0631969,-59.5424314"
+              target ="_blank">Oistins Bay Gardens</a> which serves swordfish, marlin, tuna, flying fish
+            and lobster in a very informal setting. Depending on the vendor, you can get your fish grilled or
+          fried right infront of your eyes.</p>
+              <p class="text">Food is available from 7:00pm and by 8:00pm the area might be crowded.
+              If you decide to go before 7:00pm., there is the opportunity to collect fish scraps
+            from vendors and feed the turtles.</p>
+            </div>
+          </div>
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage" src="OistinsFishFry.jpg" alt="Some animals at the wild life reserve">
+              <!-- change image to waht you want -->
+          </div>
+        </div>
+      </div>
+    <br>
+      <!-- <div class="row">
+        <div class="col-12">
+          <h2>Image Gallery</h2>
+        </div>
+      </div> -->
+      <!-- <div class="row">
+        <div class="col-12">
+          <div class="ImageGalleryContainer">
+            <div class="Slide">
+              <div class="numbertext">1/3</div>
+              <img src="BreadAndTwo.jpg" alt="Bread and Two" width="100%" height="100%">
+              <div class="caption">The famous bread and two</div>
+            </div>
+            <div class="Slide">
+              <div class="numbertext">2/3</div>
+              <img src="cou-cou stick.jpg" alt="Cou-Cou Stick" width="100%" height="100%">
+              <div class="caption">A cou-cou stick which resembles a bat</div>
+            </div>
+            <div class="Slide">
+              <div class="numbertext">3/3</div>
+              <img src="MacaroniPieMeal.jpg"
+              alt="People eating a meal consisting of Rice, Fish and Macaroni Pie" height="100%" width="100%">
+              <div class="caption">Some individuals are enjoying Barbados' Macaroni Pie in a meal</div>
+            </div>
+
+            <a class="leftArrow" onclick="plusSlides(-1)">&#10094;</a>
+            <div style="text-align:center;">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <a class="rightArrow" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+      </div> -->
+
+    <script src="BarbadosActivities.js"></script>
+  </body>

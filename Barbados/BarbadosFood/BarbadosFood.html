@@ -1,0 +1,272 @@
+<!--Just base code so you only have to copy and paste the beginning structure each time-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport w3 link: https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbados Food</title>
+    <!-- Name to Page  -->
+    <link rel="stylesheet" href="BarbadosFood.css">
+    <link rel="stylesheet" href="../../fonts.css">
+    <!-- Change href to relevant css -->
+    <!-- Add Navicon somewhere -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../Favicon/site.webmanifest">
+  </head>
+  <body>
+    <div style="padding:0;"class="row" id ="BannerBar">
+        <div id="logosection" class="col-3">
+          <a  href="../../index.html"><img id="logo" src="../../Caribbean_Curious.png" alt=""></a>
+        </div>
+        <div style="padding:0;" id="optionsection"class="col-9">
+          <div id="optionscontainer">
+            <div id="mobileMenu">
+              <button id ="buttonMobile"type="button" name="button" onclick="openClose()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+              </button>
+            </div>
+            <ul id = "options">
+              <li class ="option"><a href="../../Suggestions/suggestions.php">SUGGESTIONS</a></li>
+              <li class ="option"><a href="../../About Us/AboutUs.html">ABOUT US</a></li>
+              <li class ="option"><a href="../../IslandList/IslandList.html">ISLAND LIST</a></li>
+              <li id="OddOne"class ="option"><a href="../../InteractiveMap/InteractiveMap.html">INTERACTIVE MAP</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+      <div style="height:70px;padding:0;" class="row Country">
+        <!-- Direct styles for the "Barbados row" -->
+        <div class="col-12" id = "Heading">
+          <div id ="titleHeading">
+            <h1 id="title" >Barbados</h1>
+          </div>
+          <!-- Change the name to suit -->
+        </div>
+      </div>
+
+      <!-- This row is the navigation Bar -->
+      <div class="row"id="NavBar2">
+        <div class="col-12" id="NavBar">
+          <button id="OpenMenuMobile" onclick="MobileOptions()"type="button" name="button">Topics</button>
+          <ul id ="NavList">
+            <!-- Change the hrefs to what you need for ur certain page -->
+            <li class="NavOption"><a href="../BarbadosIslandOverview/BarbadosIslandOverview.html">Island Overview</a></li>
+            <li class="NavOption" id="activeBar"><a href="../BarbadosFood/BarbadosFood.html">Food</a></li>
+            <!-- Move activeBar to the li you want to be white/selected
+              **TO CHANGE THE COLOR IN MOBILE MODE GO TO THE JAVASCRIPT-->
+            <li class="NavOption"><a href="../BarbadosAccomodation/BarbadosAccomodation.html">Accomodation</a></li>
+            <li class="NavOption"><a href="../BarbadosActivities/BarbadosActivities.html">Activities</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copy from Line 50 to line 65 to add more content options-->
+      <div class="row">
+        <h1 id ="IntroHeading">One Stop Guide to Bajan Cuisine</h1>
+      </div>
+      <div style="display:flex;justify-content: center;"  class="row">
+        <div id="Introduction" class="col-7">
+          <div class="central">
+            Barbados is home to a number of tasty foods which
+            were developed from their time as a colony of England.<br><br>
+            Famous foods include:
+            <ul>
+              <li>Fishcakes</li>
+              <li>Bakes</li>
+              <li>Conkies</li>
+              <li>Cou-Cou and Flying Fish</li>
+              <li>Pudding and Souse</li>
+              <li>Macaroni Pie</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <!-- Or copy this div.row if you want the picture to be on other side -->
+      <div class="row Sub-Topic-Title">
+        <h2 class ="subhead">Fishcakes</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div style =""class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">These are a traditional breakfast item which
+              are often served on their own, or with a baked good called bakes</p>
+              <p class="text">They can be found as appetizers in restaurants,
+              finger food at cocktails parties or even sandwiched between
+            'salt bread' to make a bajan famous <b>Bread and Two</b></p>
+            <p class ="text">They are made with salted code, fresh seasonings
+              such as parsley and thyme, baking powder, water and hot pepper if
+            you're feeling dicey.</p>
+            <p class = "text">Check out <a href="https://barbados.org/barbados-recipes-fishcakes.htm#.YR3OJXvPyUk"
+              target="_blank">here</a> to learn how to make bajan fishcakes</p>
+            </div>
+          </div>
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage" src="fishcakes.jpg" alt="Picture of Fishcakes">
+              <!-- change image to waht you want -->
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="row Sub-Topic-Title">
+        <h2 class ="subhead">Bakes</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage"  src="bakes.jpg" alt="Picture of Bakes">
+          </div>
+          <div class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">Bakes aren't strictly a Bajan food but the way
+              Bajans make them certainly is different.</p>
+              <p class = "text">Bajans add sugar to their bakes to make
+              them sweet and savoury. They are typically made with sugar, whatever
+            and flour as the main ingredients but other ingredients are added
+            to please tastebuds</p>
+            <p class = "text">If you are interested in how to make these sweet
+            delights, click <a href="https://blog.thecrane.com/blog/2016/08/10/bajan-fried-bakes-recipe"
+            target ="_blank"> here</a> to learn how to cook them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="row Sub-Topic-Title">
+        <h2 class ="subhead">Conkies</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div style =""class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">A Conkie is a popular cultural food that is often
+              eaten in the month of November to celebrate Barbados' Independence.
+            Some Bajans may eat these all year round however.</p>
+              <p class="text">They are made with corn, pumpkin, coconut and sweet potato
+                and are cooked wrapped in green banana leaves.</p>
+            <p class ="text">They are a bit labour intensive to make but if you
+            are interested in making conkies,
+            <a href="https://barbados.org/barbados-recipes-conkies.htm#.YSPmcHvPyUk"
+            target='_blank'>feel free to learn</a>. </p>
+            </div>
+          </div>
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage" src="conkies.jpg" alt="Picture of Conkies">
+              <!-- change image to waht you want -->
+          </div>
+        </div>
+      </div>
+      <div class="row Sub-Topic-Title">
+        <h2 class ="subhead">Cou-Cou and Flying Fish</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage"  src="CouCouFlyingFish.jpg" alt="Cou Cou and Flying Fish">
+          </div>
+          <div class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">Cou-Cou and Flying Fish make up the National dish
+              of Barbados. Cou-Cou is a cornmeal and okra product while Flying Fish
+              is the National Fish of Barbados.</p>
+              <p class = "text">The Cou-Cou is stirred continuously with a Cou-Cou
+              stick, which has a resemblance to a small cricket bat. It has to be stirred vigorously to ensure
+              that a smooth, fluffy meal is made.</p>
+            <p class = "text">Take part in Bajan culture!
+              <a href="https://barbados.org/barbados-recipes-cou-cou.htm#.YSPuv3vPyUk"
+            target ="_blank">learn how to create the National Dish of Barbados</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row Sub-Topic-Title">
+        <h2 class ="subhead">Pudding and Souse</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div style =""class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">Pudding and Souse is a traditional Saturday lunch
+                in Barbados. The pudding is essentially steamed sweet potato
+              while the Souse is pickled pork.</p>
+              <p class="text">Many locals go to food places and vendors to buy
+              their portion such as
+              <a href="https://www.google.com/maps/place/The+Village+Bar+at+Lemon+Arbour/@13.1697716,-59.5287376,17z/data=!3m1!4b1!4m5!3m4!1s0x8c43f25b9cf1642f:0x839e7a8ca751af41!8m2!3d13.1697664!4d-59.5265489"
+              target="_blank"> The Villar Bar at Lemon Arbor</a> in St. John </p>
+            <p class ="text">If you want to try making your own Pudding and Souse instead,
+            take a look at <a href="https://barbados.org/barbados-recipes-pudding-souse.htm#.YSPzBHvPyUk"
+            target="_blank">this article</a> </p>
+            </div>
+          </div>
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage" src="PuddingSouse.jpg" alt="Pudding and Souse">
+              <!-- change image to waht you want -->
+          </div>
+        </div>
+      </div>
+      <div class="row Sub-Topic-Title">
+        <h2 class ="subhead">Macaroni Pie</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage"  src="Macaroni Pie.png" alt="Macaroni Pie">
+          </div>
+          <div class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">Macaroni Pie is for certain going to be at every special
+              occasion or picnic in Barbados. Arguably the most popular food,
+            Macaroni Pie is a bajan take to Macaroni and Cheese.</p>
+              <p class = "text">Instead of elbow macaroni, it is made with macaroni
+              tubes and then baked. As one may guess, cheese is also a key ingredient.</p>
+            <p class = "text">If you are interested in how to make Macaroni Pie,
+              click <a href="https://barbados.org/barbados-recipes-macaroni-pie.htm#.YSP5VnvPyUk"
+            target ="_blank"> here</a> to learn how to bake it</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+      <!-- <div class="row">
+        <div class="col-12">
+          <h2>Image Gallery</h2>
+        </div>
+      </div> -->
+      <!-- <div class="row">
+        <div class="col-12">
+          <div class="ImageGalleryContainer">
+            <div class="Slide">
+              <div class="numbertext">1/3</div>
+              <img src="BreadAndTwo.jpg" alt="Bread and Two" width="100%" height="100%">
+              <div class="caption">The famous bread and two</div>
+            </div>
+            <div class="Slide">
+              <div class="numbertext">2/3</div>
+              <img src="cou-cou stick.jpg" alt="Cou-Cou Stick" width="100%" height="100%">
+              <div class="caption">A cou-cou stick which resembles a bat</div>
+            </div>
+            <div class="Slide">
+              <div class="numbertext">3/3</div>
+              <img src="MacaroniPieMeal.jpg"
+              alt="People eating a meal consisting of Rice, Fish and Macaroni Pie" height="100%" width="100%">
+              <div class="caption">Some individuals are enjoying Barbados' Macaroni Pie in a meal</div>
+            </div>
+
+            <a class="leftArrow" onclick="plusSlides(-1)">&#10094;</a>
+            <div style="text-align:center;">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <a class="rightArrow" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+      </div> -->
+
+    <script src="BarbadosFood.js"></script>
+  </body>

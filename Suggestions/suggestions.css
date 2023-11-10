@@ -1,0 +1,205 @@
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  background-color:#f8f8ff; /* The off-white color */
+  opacity:0.9;
+  margin:0px;
+  font-family: 'latoregular';
+  margin: 20px;
+  font-size:18px;
+}
+/*  */
+
+.suggestion{
+  max-width:95%;
+}
+.CenterText{
+  text-align:center;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  /* Row are the divs which contains the columns and span
+  the whole page */
+.row{
+  position:relative;
+  padding:15px;
+  margin:auto;
+  width:100%;
+  max-width:1200px;
+  background-color:white;
+  /* border:1px solid black; */
+}
+/*Clearfix hack that makes sure nothing overfllows*/
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+/*-----------*/
+/*The bar at the very top*/
+#BannerBar{
+  display:flex;
+   position: -webkit-sticky;
+   position:sticky;
+  top:0;
+  background-color:#058ED9; /* The blue background of bar */
+  float:none;
+  z-index:3;
+  color:#04724D;
+  font-family:latoregular; /* Download font */
+}
+#logosection{
+  height:100%;
+}
+#logo{
+  width:100%;
+  height:100%;
+  display:inline;
+}
+#optionscontainer{
+  width:100%;
+  height:100%;
+}
+#options{
+  list-style-type: none;
+  justify-content:end;
+  padding:0;
+  margin:0;
+  align-items: center;
+}
+/*option refers to the INTERACTIVE MAP AND STUFF*/
+.option a{
+  text-decoration: none;
+  color:black;
+
+}
+.option:hover{
+  background-color:#04724D; /*Please change this and lmk what hexcode you use*/
+}
+
+
+/* Text in the paragraphs */
+/* Image gallery at the bottom of the page */
+
+/* This is used for screens of 770 pixels and larger */
+@media screen and (min-width:770px)
+  {
+    /* These offer different widths to each colum by dividing (100/12) * col-n */
+    /* The columns in a div of class row add up to 12 */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body{
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+    #BannerBar{
+      height:100px;
+    }
+    #logosection{
+      height:100%;
+    }
+    /* Div containing the Title and Logo */
+    #Heading{
+      text-align:center;
+      height:100%;
+      padding:0;
+      margin:0;
+      width:100%;
+    }
+    /* Title Heading */
+
+
+    #options{
+        height:100%;
+        width:100%;
+      }
+      .option{
+        height:100%;
+        width:25%;
+        float:right;
+        display:table-cell;
+        vertical-align: middle;
+        text-align: center;
+        padding:0px;
+        padding-top:38px;
+        font-size:24px;
+      }
+    #buttonMobile{
+      display:none;
+    }
+
+  }
+/* Used for screens smaller than 770 px */
+@media screen and (max-width:1175px) and (min-width:770px) {
+  .option{
+    font-size:20px;
+  }
+}
+@media screen and (max-width: 769px)
+  {
+
+    /* Changes all the column widths to 100% */
+    [class*="col-"] {
+      width: 100%;
+    }
+    body{
+      margin-top:0px;
+      margin:0;
+    }
+    #BannerBar{
+      height:80px;
+    }
+    .hamburger{
+      width: 35px;
+      height: 5px;
+      background-color: black;
+      margin: 6px 0;
+      position:relative;
+      right:0;
+      top:50%;
+    }
+    #buttonMobile{
+      position:absolute;
+      right:10px;
+      top:15px;
+      background: none;
+      border:none;
+    }
+    #options{
+      border-bottom:1px solid black;
+      position:absolute;
+      top:80px;
+      left:0;
+      right:0;
+      text-align: center;
+      height:250px;
+      visibility: hidden;
+      background-color:#058ED9;
+      opacity:9;
+      z-index:100;
+    }
+    .option{
+      height:0%;
+      width:100%;
+      display:block;
+      padding:15px;
+      font-size:18px;
+    }
+
+  }

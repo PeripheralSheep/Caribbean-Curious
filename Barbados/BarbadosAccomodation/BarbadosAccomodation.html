@@ -1,0 +1,217 @@
+<!--Just base code so you only have to copy and paste the beginning structure each time-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport w3 link: https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbados Accomodation</title>
+    <!-- Name to Page  -->
+    <link rel="stylesheet" href="BarbadosAccomodation.css">
+    <link rel="stylesheet" href="../../fonts.css">
+    <!-- Change href to relevant css -->
+    <!-- Add Navicon somewhere -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../Favicon/site.webmanifest">
+  </head>
+  <body>
+    <div style="padding:0;"class="row" id ="BannerBar">
+        <div id="logosection" class="col-3">
+          <a  href="../../index.html"><img id="logo" src="../../Caribbean_Curious.png" alt=""></a>
+        </div>
+        <div style="padding:0;" id="optionsection"class="col-9">
+          <div id="optionscontainer">
+            <div id="mobileMenu">
+              <button id ="buttonMobile"type="button" name="button" onclick="openClose()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+              </button>
+            </div>
+            <ul id = "options">
+              <li class ="option"><a href="../../Suggestions/suggestions.php">SUGGESTIONS</a></li>
+              <li class ="option"><a href="../../About Us/AboutUs.html">ABOUT US</a></li>
+              <li class ="option"><a href="../../IslandList/IslandList.html">ISLAND LIST</a></li>
+              <li id="OddOne"class ="option"><a href="../../InteractiveMap/InteractiveMap.html">INTERACTIVE MAP</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+      <div style="height:70px;padding:0;" class="row Country">
+        <!-- Direct styles for the "Barbados row" -->
+        <div class="col-12" id = "Heading">
+          <div id ="titleHeading">
+            <h1 id="title" >Barbados</h1>
+          </div>
+          <!-- Change the name to suit -->
+        </div>
+      </div>
+
+      <!-- This row is the navigation Bar -->
+      <div class="row"id="NavBar2">
+        <div class="col-12" id="NavBar">
+          <button id="OpenMenuMobile" onclick="MobileOptions()"type="button" name="button">Topics</button>
+          <ul id ="NavList">
+            <!-- Change the hrefs to what you need for ur certain page -->
+            <li class="NavOption"><a href="../BarbadosIslandOverview/BarbadosIslandOverview.html">Island Overview</a></li>
+            <li class="NavOption" ><a href="../BarbadosFood/BarbadosFood.html">Food</a></li>
+            <!-- Move activeBar to the li you want to be white/selected
+              **TO CHANGE THE COLOR IN MOBILE MODE GO TO THE JAVASCRIPT-->
+            <li class="NavOption" id="activeBar"><a href="../BarbadosAccomodation/BarbadosAccomodation.html">Accomodation</a></li>
+            <li class="NavOption"><a href="../BarbadosActivities/BarbadosActivities.html">Activities</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copy from Line 50 to line 65 to add more content options-->
+      <div class="row">
+        <h1 id ="IntroHeading">Places to Stay in Barbados</h1>
+      </div>
+      <div style="display:flex;justify-content: center;"  class="row">
+        <div id="Introduction" class="col-7">
+          <div class="central">
+            <p>When travelling to a different country, it's only obvious that you
+              want to find the best places to stay. We will recommend
+            some hotels, villas, guesthouses and resorts to stay while you visit Barbados.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <!-- Or copy this div.row if you want the picture to be on other side -->
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">SANDALS Barbados</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div style =""class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">This beautiful hotel is located in
+              St. Lawrence Gap, Christ Church. </p>
+              <p class="text">Sandals offers a restaurant, free private parking,
+              an outdoor swimming pool as well as a fitness center. All rooms
+            have air conditioning and a flat-screen TV</p>
+            <p class ="text">You can play billiard, table tennis and darts as well!
+            The surrounding area is also popular for snorkeling and canoeing.</p>
+            <p class = "text">Visit their <a href="https://www.sandals.com/sandals-barbados/"
+              target="_blank">website</a> to book and learn more</p>
+            </div>
+          </div>
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage" src="Sandals.jpg" alt="Sandals Hotels">
+              <!-- change image to waht you want -->
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">The Crane Resort</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage"  src="TheCrane.jpg" alt="The Crane">
+          </div>
+          <div class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">The Crane is the oldest continuously operation
+              hotel in the Caribbean. Located in St. Philip, it offers perfect luxury amenities for over a century.</p>
+              <p class = "text">Services it offers are cascading cliff-top pools, award-winning restaurants and the
+              world renowned Crane beach which is known as one of the most beautiful beaches in the world.</p>
+            <p class = "text">Visit their <a href="https://www.thecrane.com"
+            target ="_blank">website</a> to learn all about The Crane.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">Crystal Springs Villa</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div style =""class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">This is a beautiful private estate on 1.7-acres of land. It is bright, spacious, comfortable yet stylish
+              and is located on the beachfront. You can relax next to a pool
+            or relax on one of the terraces. </p>
+              <p class="text">It has access to a secluded sandy
+              cove, an 18-ft speedboat, a Sunfish sailboat and some paddle boards.
+              Nearby activites to the villa include tennis, golf and polo.</p>
+            <p class ="text">Like the other locations, visit their
+            <a href="https://www.crystalspringsbarbados.com"
+            target='_blank'>website</a> for more information.</p>
+            </div>
+          </div>
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage" src="CrystalSprings.jpg" alt="CrystalSprings">
+              <!-- change image to waht you want -->
+          </div>
+        </div>
+      </div>
+      <div class="row Sub-Topic-Title">
+        <h2 class="subhead">Old Trees 302 – La Mirage</h2>
+      </div>
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage"  src="La Mirage.jpg" alt="La Mirage Villa">
+          </div>
+          <div class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">Located in St. James, this luxury beachfront penthouse with a private
+                plunge pool and spectacular sea views has been finished to the highest standard.</p>
+              <p class = "text">Fully air conditioned, it offers ample entertaining space with four bedrooms and two master suites, boasting magnificent sea views from their private terraces.</p>
+            <p class = "text">
+              <a href="https://www.barbadossothebysrealty.com/old-trees-302-la-mirage"
+            target ="_blank">Heres a webpage to learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+      <!-- <div class="row">
+        <div class="col-12">
+          <h2>Image Gallery</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="ImageGalleryContainer">
+            <div class="Slide">
+              <div class="numbertext">1/4</div>
+              <img src="horse.jpg" alt="" width="100%">
+              <div class="caption">xyz</div>
+            </div>
+            <div class="Slide">
+              <div class="numbertext">2/4</div>
+              <img src="goat.jpg" alt="" width="100%">
+              <div class="caption">xyz</div>
+            </div>
+            <div class="Slide">
+              <div class="numbertext">3/4</div>
+              <img src="turtle.jpg" alt="" width="100%">
+              <div class="caption">xyz</div>
+            </div>
+            <div class="Slide">
+              <div class="numbertext">4/4</div>
+              <img src="cat.jpg" alt="" width="100%">
+              <div class="caption">xyz</div>
+            </div>
+
+            <a class="leftArrow" onclick="plusSlides(-1)">&#10094;</a>
+            <div style="text-align:center;">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <a class="rightArrow" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+      </div> -->
+
+
+    <br><br><br><br><br><br>
+    <script src="BarbadosAccomodation.js"></script>
+  </body>

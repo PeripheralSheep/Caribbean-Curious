@@ -1,0 +1,131 @@
+<!--Just base code so you only have to copy and paste the beginning structure each time-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport w3 link: https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbados Overview</title>
+    <!-- Name to Page  -->
+    <link rel="stylesheet" href="BarbadosIslandOverview.css">
+    <link rel="stylesheet" href="../../fonts.css">
+    <!-- Change href to relevant css -->
+    <!-- Add Navicon somewhere -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../Favicon/site.webmanifest">
+  </head>
+  <body>
+    <div style="padding:0;"class="row" id ="BannerBar">
+        <div id="logosection" class="col-3">
+          <a  href="../../index.html"><img id="logo" src="../../Caribbean_Curious.png" alt=""></a>
+        </div>
+        <div style="padding:0;" id="optionsection"class="col-9">
+          <div id="optionscontainer">
+            <div id="mobileMenu">
+              <button id ="buttonMobile"type="button" name="button" onclick="openClose()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+              </button>
+            </div>
+            <ul id = "options">
+              <li class ="option"><a href="../../Suggestions/suggestions.php">SUGGESTIONS</a></li>
+              <li class ="option"><a href="../../About Us/AboutUs.html">ABOUT US</a></li>
+              <li class ="option"><a href="../../IslandList/IslandList.html">ISLAND LIST</a></li>
+              <li id="OddOne"class ="option"><a href="../../InteractiveMap/InteractiveMap.html">INTERACTIVE MAP</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+      <div style="height:70px;padding:0;" class="row Country">
+        <!-- Direct styles for the "Barbados row" -->
+        <div class="col-12" id = "Heading">
+          <div id ="titleHeading">
+            <h1 id="title" >Barbados</h1>
+          </div>
+          <!-- Change the name to suit -->
+        </div>
+      </div>
+
+      <!-- This row is the navigation Bar -->
+      <div class="row"id="NavBar2">
+        <div class="col-12" id="NavBar">
+          <button id="OpenMenuMobile" onclick="MobileOptions()"type="button" name="button">Topics</button>
+          <ul id ="NavList">
+            <!-- Change the hrefs to what you need for ur certain page -->
+            <li class="NavOption" id="activeBar"><a href="../BarbadosIslandOverview/BarbadosIslandOverview.html">Island Overview</a></li>
+            <li class="NavOption"><a href="../BarbadosFood/BarbadosFood.html">Food</a></li>
+            <!-- Move activeBar to the li you want to be white/selected
+              **TO CHANGE THE COLOR IN MOBILE MODE GO TO THE JAVASCRIPT-->
+            <li class="NavOption"><a href="../BarbadosAccomodation/BarbadosAccomodation.html">Accomodation</a></li>
+            <li class="NavOption" ><a href="../BarbadosActivities/BarbadosActivities.html">Activities</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copy from Line 50 to line 65 to add more content options-->
+      <div class="row">
+        <h1 id ="IntroHeading">Welcome to the Gem of The Caribbean Sea</h1>
+      </div>
+      <div style="display:flex;justify-content: center;"  class="row">
+        <div id="Introduction" class="col-8">
+          <img src="BarbadosFlag.gif" alt="" width="100%">
+          <div class="central text">
+            <p>Welcome to the webpages dedicated to Barbados. Barbados is the most
+            easterly of all the Caribbean Islands and spans across 166 square miles. The people
+          of Barbados are officially known as 'Barbadians' but you are more likely to hear them
+        being referred to as 'Bajans' which is more popular.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <hr> -->
+      <!-- Or copy this div.row if you want the picture to be on other side -->
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div style =""class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">
+                Barbados is sub-divided into 11 districts called parishes. these
+                11 parishes are St. Michael, St. James, St. Joseph, St. John, St. Thomas,
+                St. George, Christ Church, St. Philip, St. Andrew, St. Peter and St. Lucy. The map
+                shown shows the shape of Barbados and where each of these parishes are located.
+
+              </p>
+            </div>
+          </div>
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage" src="BarbadosMap2.png" alt="Map of Barbados">
+              <!-- change image to waht you want -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="flexboxcontainer">
+          <div class="col-5 flexboxcontainer2" >
+              <img class ="contentimage towns"  src="Bridgetown.jpg" alt="Bridgetown">
+              <img class ="contentimage towns" src="Speightstown.jpg" alt="Speightstown">
+          </div>
+          <div class="col-7 Sub-Topic">
+            <div class="Paragraphs">
+              <p class="text">Barbados then has 4 main towns: Bridgetown (Capital), Oistins,
+              Speightstown, and Holetown.</p>
+              <p class="text">located in St. Michael, Bridgetown is the largest town in Barbados. Bridgetown and its Garrison
+              is a UNESCO World Heritage Site. The Jewish Museum is located here, Independence Square,
+              which is similar to Trafalgar Square, is located here with a statue of the first Prime
+              Minister of Barbados, Errol Barrow.</p>
+              <p class="text">Holetown is a tourist hotspot located in St.James and has access to the beautiful West Coast
+              of Barbados. Many tourists stay in the hotels and villas located in this area</p>
+              <p class="text">Oistins is a fish town located in Christ Church and many of the inviduals living in this area
+              catch and sell fish. Oistins Fish Fry also occurs here every Friday night.</p>
+              <p class="text">Speightstown is located in St. Peter. It was once named Jamestown and historically
+              was a port. Now, Speightstown which balances colonial charm with modern touristic sites.</p>
+              <p class ="text">The pictures seen show the beautiful towns Bridgetown and Speightstown.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="BarbadosIslandOverview.js"></script>
+  </body>

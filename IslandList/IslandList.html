@@ -1,0 +1,85 @@
+<!--Just base code so you only have to copy and paste the beginning structure each time-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- viewport w3 link: https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island List</title>
+    <!-- Name to Page  -->
+    <link rel="stylesheet" href="./IslandList.css">
+    <link rel="stylesheet" href="../fonts.css">
+    <!-- Change href to relevant css -->
+    <!-- Add Navicon somewhere -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../Favicon/site.webmanifest">
+  </head>
+<body>
+    <div style="padding:0;"class="row" id ="BannerBar">
+        <div id="logosection" class="col-3">
+          <a  href="../index.html"><img id="logo" src="../Caribbean_Curious.png" alt=""></a>
+        </div>
+        <div style="padding:0;" id="optionsection"class="col-9">
+          <div id="optionscontainer">
+            <div id="mobileMenu">
+              <button id ="buttonMobile"type="button" name="button" onclick="openClose()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+              </button>
+            </div>
+            <ul id = "options">
+              <li class ="option"><a href="../Suggestions/suggestions.php">SUGGESTIONS</a></li>
+              <li class ="option"><a href="../About Us/AboutUs.html">ABOUT US</a></li>
+              <li class ="option"><a href="IslandList.html">ISLAND LIST</a></li>
+              <li id="OddOne"class ="option"><a href="../InteractiveMap/InteractiveMap.html">INTERACTIVE MAP</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="row Categories">
+      <div class="col-12 Categories">
+        <h1 style="position:relative; top:20px;">Selectable Countries</h1>
+      </div>
+    </div>
+      <div id="flexbox">
+        <!-- <a class ="FlagNav" href="../Barbados/BarbadosIslandOverview/BarbadosIslandOverview.html">
+          <div class="CardContainer">
+            <img class = "Flag" src="Bahamas.png" alt="">
+            <div class="info">
+              Bahamas
+            </div>
+          </div>
+        </a>  -->
+        <!-- Copy line 44 to 51 as many times as needed for each flag -->
+        <a class ="FlagNav" href="../Barbados/BarbadosIslandOverview/BarbadosIslandOverview.html">
+          <div class="CardContainer">
+            <img class = "Flag" src="BarbadosFlag.png" alt=""> <!--Insert Image of flag -->
+            <div class="info">
+              Barbados
+            </div>
+          </div>
+        </a>  <!-- End of one flag-->
+        <!-- <a class ="FlagNav" href="../Barbados/BarbadosIslandOverview/BarbadosIslandOverview.html">
+          <div class="CardContainer">
+            <img class = "Flag" src="Dominica.jpg" alt="">
+            <div class="info">
+              Dominica
+            </div>
+          </div>
+        </a>   -->
+        <a class ="FlagNav" href="../Barbados/BarbadosIslandOverview/BarbadosIslandOverview.html">
+          <div class="CardContainer">
+            <img class = "Flag" src="Nevis.svg" alt=""> <!--Insert Image of flag -->
+            <div class="info">
+              Nevis
+            </div>
+          </div>
+        </a>  <!-- End of one flag-->
+      </div>
+
+      <!-- Copy from Line 50 to line 65 to add more content options-->
+    <script src="IslandList.js"></script>
+  </body>
